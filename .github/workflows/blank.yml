@@ -1,4 +1,4 @@
-            - name: Cargar un artefacto de compilación 
+            - name: artifact
   uses: actions/upload-artifact@v4.6.2 
   with: 
     # Nombre del artefacto 
