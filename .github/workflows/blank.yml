@@ -1,12 +1,14 @@
-            - name: artifact
-  uses: actions/upload-artifact@v4.6.2 
-  with: 
+- name: Upload Artifact
+  uses: actions/upload-artifact@v4.6.2
+  with:
+    path: dist/
+  
     # Nombre del artefacto 
     name: # opcional, el valor predeterminado es artifact 
     # Un archivo, directorio o patrón comodín que describe qué cargar 
-    path: 
     # El comportamiento deseado si no se encuentran archivos usando la ruta proporcionada. 
 Opciones disponibles: 
+
   warn: Genera una advertencia pero no hace que la acción falle 
   error: Hace que la acción falle con un mensaje de error 
   ignore: No genera advertencias ni errores, la acción no falla 
